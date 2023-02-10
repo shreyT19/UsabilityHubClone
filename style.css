@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+:root{
+    --primary-font-color:#183b56;
+    --secondary-font-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69e3;
+    --padding-inline-section:20px;
+}
+/* Utlity Class */
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.hover-link{
+    color:var(--primary-font-color);
+}
+.hover-link:hover{
+    color: var(--accent-color);
+    transition: 0.15s ease-in-out;
+}
+.primary-button{
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-weight: 500;
+    background-color:var(--accent-color);
+    color: white !important;
+    box-shadow: 0 0 2px var(--secondary-font-dark);
+    transition: 0.2s ease-in-out;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button{
+    border: 0.5px solid var(--secondary-font-color);
+    padding: 12px 24px;
+    border-radius: 6px;
+    color: var(--primary-font-color) ;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.top-link{
+    color: white;
+}
+.top-link:hover{
+    /* color: #B8CCE4; */
+    color: black;
+    transition: 1s ease-out;
+}
+/* Utlity Class Ends*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-font-color);
+    
+    
+}
+h1{
+    font-size: 3rem ;
+    
+}
+h2{
+    font-size: 2rem;;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1.25rem;
+    color: var(--secondary-font-color);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Top Banner */
+.top-banner{
+    height: 40px;
+    
+    width: 100%;
+    
+}
+
+
+.small-bold-text{
+    font-size: 1rem;
+    
+    justify-content: center;
+    font-weight: 500;
+    
+}
+
+.container{
+    max-width: 1180px;
+    margin: auto;
+    padding-inline: var(--padding-inline-section);
+}
+.top-banner{
+    background-image: url(./assets/asset1.1.png);
+    background-color: #4fb3d4;
+    background-size: 200px;
+}
+
+.banner-text{
+    color:white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* Top Banner  Ends*/
+
+/* Navbar */
+
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.company-logo img{
+    width: 200px;    
+}
+.nav-links ul{
+    list-style: none;
+    justify-content: end;
+    gap:40px;
+}
+
+/* Navbar Ends*/
+
+/* Header */
+
+header{
+    padding: 50px var(--padding-inline-section) 0;
+    
+}
+.header-section{
+    
+    justify-content: center;
+    gap:50px
+}
+
+.left-section h1{
+    margin-top:20px;
+    font-weight: 500;
+}
+.left-section p{
+    margin-top: 20px;
+}
+
+.get-started-btn{
+    margin-top: 30px;
+}
+
+.header-image{
+    width: 600px;
+    
+}
+
+/* Header Ends*/
+
+
+/* Companies Logo*/
+
+.companies-header{
+    text-align: center;
+    margin-block: 40px;
+    color: var(--primary-font-color);
+}
+
+.logo{
+    
+    height: 45px;
+}
+.logos{
+    justify-content: space-between;
+    margin-block:20px ;
+    flex-wrap: wrap;
+}
+
+
+/* Companies Logo Ends*/
+
+/* Features Section */
+
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url(./assets/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+
+
+.features-header{
+    
+    text-align: center;
+   
+}
+.features-header h2{
+    font-weight: 500;
+}
+.features-header h2{
+    margin-bottom: 20px;
+}
+
+
+.features-area{
+    margin-top: 40px;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    gap:40px;
+}
+
+.features-card {
+    flex-direction: column;
+    text-align: center;
+    gap:20px;
+    max-width: 30%;
+
+}
+.small-logo{
+    height:40px
+    
+}
+
+.features-card p{
+    font-size: 1rem;
+}
+
+
+/* Features Section Ends*/
+
+
+
+
+/* BigFeatures Section Starts*/
+
+.big-feature-section{
+    margin-top: 40px;
+    padding: 30px var(--padding-inline-section) 0;
+}
+.big-feature-container{
+    gap:30px;
+}
+.left-container img{
+    width: 100% ; 
+}
+.right-container{
+    flex-direction: column;
+    
+    align-items: flex-start; 
+}
+
+.right-container img{
+    margin-top: 20px;
+    width: 20%;
+}
+.right-container h4{
+    font-weight: 500;
+    margin-top: 20px;
+}
+.right-container h2{
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.right-container p{
+    width: 85%;
+}
+
+.ceo-logo img{
+    width: 20% !important;
+    
+}
+.review-by-ceo{
+    flex-direction: column;
+    margin-left:10px ;
+}
+.review-by-ceo p{
+    font-size: 0.8rem;
+    margin-top: 0;
+    width: 100% !important;
+}
+.brand1-logo{
+    width: 15% !important;
+}
+
+/*Big  Features Section Ends*/
+
+
+
+
+/* <!-- Examples Section Starts--> */
+.example-section{
+    margin-top: 40px;
+    padding: 20px var(--padding-inline-section) 0;
+}
+
+.example-container{
+    justify-content: center;
+    
+}
+.header-container{
+    flex-direction: column;
+    gap:20px;
+}
+
+.header-container h2{
+    font-weight: 500;
+    font-size: 2.25rem;
+   
+}
+.examples-area{
+    margin-block: 30px;
+    justify-content: space-between;
+    padding: 20px var(--padding-inline-section) 0;
+}
+.examples-card{
+   width: 23%;
+   min-height: 300px;
+   background: black;
+   
+   
+    position: relative;
+}   
+
+
+.examples-card:hover{
+    box-shadow: 0 0 15px rgb(85, 83, 83);
+}
+
+/* You can also use nth child concept to assign images using the following code below*/
+
+/* .examples-card:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./assets/asset36.jpeg);
+    background-size: cover
+} */
+
+/* The above code will not work as you have used inline css */
+
+
+.card-text{
+    position: absolute;
+    bottom:20px;
+    
+    left:20px;
+    right: 20px;
+    color: whitesmoke;
+    text-align: left;
+}
+
+
+
+/* <!-- Examples Section Ends--> */
+
+
+
+/* <!-- CTA Section Starts--> */
+
+.cta-section{
+    background-color: #183b56;
+    color: whitesmoke;
+    justify-content: center;
+    margin-block: 40px;
+}
+.cta-container{
+    
+    margin-block: 40px;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 0 !important;
+    
+}
+
+.left-side-cta{
+    
+    padding-top: 40px;
+    
+}
+.left-side-cta h1,h4{
+    font-weight: 500;
+}
+
+.left-side-cta p{
+    margin: 10px 0 20px 0;
+    width: 100%;
+    color:#B8CCE4;
+    font-size: 1rem !important;
+}
+
+
+.right-side-cta img{
+    
+    width: 600px;
+    
+}
+
+.dotted-points{
+    
+    margin-top: 15px;
+    margin-bottom: 40px;
+    color:#B8CCE4;
+    font-size: 1rem !important;
+    /* color: var(--secondary-font-color); */
+    justify-content: left;
+    gap:30px;
+    padding-left: 1rem;
+    
+}
+
+
+
+
+
+/* <!-- CTA Section Ends--> */
+
+/* CTA Section2 Starts */
+
+.cta-section2{
+    
+   
+    margin-block: 40px;
+}
+.cta-container2{
+    
+    margin: 80px auto 40px auto;
+    gap: 30px;
+    flex-direction: column;
+    
+}
+.cta-container2 h1{
+    font-weight: 500;
+}
+
+
+
+
+/* CTA Section2 Ends */
+
+
+/* Footer Starts */
+
+
+.footer{
+    background-color: #EBF3FB;
+    margin-top: 40px;
+    padding: 20px var(--padding-inline-section) 20px;
+}
+.footer-container{
+    justify-content: center !important;
+    padding: 40px var(--padding-inline-section) 20px;
+    flex-direction: row;
+    align-items: flex-start !important;
+}
+
+.sub-container2{
+    flex-direction: column;
+    align-items: flex-start;
+    
+    justify-content: space-between;
+    
+
+}
+.sub-container2 h3{
+    font-weight: 500;
+    font-size: 1.25rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sub-container2 a{
+    width: 100%;
+    margin-right: 100px;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color:var(--secondary-font-color)
+}
+.sub-container2 a:hover{
+    color: var(--accent-color) ;
+    transition: 0.2s ease-in-out;
+}
+
+
+.bottom-logo{
+    position: relative;
+    right:80px;
+    
+}
+
+
+
+
+/* Footer Ends */
+
+/* Sub-Footer Starts */
+
+.sub-footer{
+    padding: 20px var(--padding-inline-section) 20px;
+    background-color: #b9cde4;
+}
+.sub-footer-section{
+    justify-content: center;
+    gap:30px
+}
+
+.sub-footer-section a{
+    color: var(--primary-font-color)
+}
+
+.sub-footer-section a:hover{
+    color: var(--accent-color);
+    transition: 0.25s ease-in-out;
+}
+
+
+
+
+.social-logo{
+    align-items: flex-end !important;
+    gap:20px
+}
+
+
+
+
+
+/* Sub-Footer Ends */
