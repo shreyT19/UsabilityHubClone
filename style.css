@@ -388,6 +388,7 @@ header{
     color: whitesmoke;
     justify-content: center;
     margin-block: 40px;
+    
 }
 .cta-container{
     
@@ -401,7 +402,7 @@ header{
 .left-side-cta{
     
     padding-top: 40px;
-    
+    padding: 20px;
 }
 .left-side-cta h1,h4{
     font-weight: 500;
