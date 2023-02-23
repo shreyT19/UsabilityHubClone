@@ -473,16 +473,16 @@ header{
     padding: 20px var(--padding-inline-section) 20px;
 }
 .footer-container{
-    justify-content: center !important;
+    justify-content: center ;
     padding: 40px var(--padding-inline-section) 20px;
     flex-direction: row;
-    align-items: flex-start !important;
+    align-items: flex-start ;
 }
 
 .sub-container2{
     flex-direction: column;
     align-items: flex-start;
-    
+    padding-inline: 10px;
     justify-content: space-between;
     
 
@@ -505,12 +505,17 @@ header{
     color: var(--accent-color) ;
     transition: 0.2s ease-in-out;
 }
-
+.sub-container1{
+    padding-inline: 20px;
+}
 
 .bottom-logo{
-    position: relative;
-    right:80px;
+    padding-inline: 20px;
+}
+.bottom-logo img{
+    width: 180px;
     
+
 }
 
 
@@ -520,16 +525,32 @@ header{
 
 /* Sub-Footer Starts */
 
+.full-footer{
+    flex-direction: row;
+    
+    justify-content: center;
+    
+}
+.footer1{
+    justify-content: center;
+    padding-inline: 40px;
+    
+}
+
 .sub-footer{
     padding: 20px var(--padding-inline-section) 20px;
     background-color: #b9cde4;
+   
+    
 }
 .sub-footer-section{
-    justify-content: center;
-    gap:30px
+    
+    gap:40px;
+    
+   
 }
 
-.sub-footer-section a{
+.social-logo a{
     color: var(--primary-font-color)
 }
 
@@ -538,12 +559,25 @@ header{
     transition: 0.25s ease-in-out;
 }
 
+.sub-footer-section a{
+    color: var(--primary-font-color)
+}
+
+.social-logo a:hover{
+    color: var(--accent-color);
+    transition: 0.25s ease-in-out;
+}
+
+
 
 
 
 .social-logo{
-    align-items: flex-end !important;
-    gap:20px
+    align-items: flex-end ;
+    gap:20px;
+    padding-inline: 40px;
+    margin-inline: 40px;
+    
 }
 
 
