@@ -1,3 +1,3 @@
 # UsabilityHubClone
 
-Responsive Hai Vai !!
+Fully Mobile Responsive 
